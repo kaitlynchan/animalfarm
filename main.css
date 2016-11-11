@@ -6,6 +6,9 @@ body{
 
 }
 
+#homebar{
+	font-size: 40px;
+}
 #homepic {
 	display: block;
     margin: auto;
@@ -18,7 +21,7 @@ li{
 }
 
 .active {
-	background-color: white;
+	background-color: Thistle;
 }
 
 #intro{
