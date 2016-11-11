@@ -1,7 +1,5 @@
 body{
 	background-color: #98e698;
-	
-
 	font-size: 40px;
 	font-family: 'Cabin Sketch', cursive;
 
@@ -34,6 +32,6 @@ div{
 
   .fix{
     position:fixed;
-    bottom:0px;
+    bottom:20px;
     left:10%;
     }
