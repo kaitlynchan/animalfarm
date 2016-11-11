@@ -1,6 +1,16 @@
 body{
 	background-color: #98e698;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
+	
 
+	font-size: 40px;
+	font-family: 'Cabin Sketch', cursive;
+
+
+}
+
+img {
+	float: center;
+}
+ul{
+	padding: 10px;
 }
