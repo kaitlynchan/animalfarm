@@ -8,16 +8,32 @@ body{
 
 }
 
-img {
+#homepic {
 	display: block;
     margin: auto;
     width: 40%;;
 }
-ul{
-	padding: 10px;
+
+li{
+	padding-left: 20px;
+
+}
+
+.active {
+	background-color: white;
 }
 
 #intro{
 	padding: 20px;
 	text-align: center;
 }
+
+div{
+	padding: 5px;
+}
+
+  .fix{
+    position:fixed;
+    bottom:0px;
+    left:10%;
+    }
