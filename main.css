@@ -9,8 +9,15 @@ body{
 }
 
 img {
-	float: center;
+	display: block;
+    margin: auto;
+    width: 40%;;
 }
 ul{
 	padding: 10px;
+}
+
+#intro{
+	padding: 20px;
+	text-align: center;
 }
