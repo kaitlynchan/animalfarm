@@ -13,3 +13,11 @@
 =======
   firebase.initializeApp(config);
 >>>>>>> origin/gh-pages
+function pushMessage(event) {
+  if (event.keyCode == 13) {
+    var name = $('#nameInput').val();
+    var text = $('#messageInput').val();
+    chatData.push({name: name, text: text});
+    $('#messageInput').val('');
+  }
+}
