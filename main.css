@@ -34,5 +34,6 @@ div{
 }
 
 .fix{
-    left:50%;
+    float: right;
+
     }
