@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"> 
+<html>
+    <head>
+        <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Horse Chat</title>
+    <title>Pig Chat</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="main.css">
  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-  </head>
-
-  <body> 
-
-  	<div class="container-fluid">
-    <nav class="navbar navbar-inverse">
+    </head>
+    <body>
+    <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -33,27 +31,35 @@
           <li><a href = "about.html">About</a></li> 
           <li><a href="cow.html">Cow Chat</a></li>
           <li><a href="chicken.html">Chicken Chat</a></li>
-          <li><a class = "active" href="horse.html">Horse Chat</a></li>
-          <li><a href="pig.html">Pig Chat</a></li>
+          <li><a href="horse.html">Horse Chat</a></li>
+          <li><a class = "active" href="pig.html">Pig Chat</a></li>
         
      </ul>
     </div>
   </div>
 </nav>
    
-   <div id = "intro" class="container">
-  <p>Quit foaling around!</p>
-  <img class = "fix" src="talkhorse.png" alt="Animal Fam">
+<div id = "intro" class="container">
+    <br>
+  <p>You are so a-MOO-sing!</p>
+  <img class = "fix" src="talkpig.png" alt="Animal Fam">
+ 
 </div>
 
 <div class="container">
   
   <div class="panel panel-default">
-    <div class="panel-body">Horse Chat</div>
-  </div>
+    <div class="panel-body"> <strong>Pig Chat</strong></div>
+         
+        <div id="messages"></div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="text" id="messageInput" placeholder="Message">
+        
+        <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        </div>
+         </div>
 </div>
-
-  
-</div>
-  </body>
+    </body>
 </html>
