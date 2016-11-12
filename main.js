@@ -10,20 +10,49 @@
 firebase.initializeApp(config);
 
 var chatData = firebase.database().ref();
+var thisChatAnimal = "Cow";
 
-function pushMessage(event) {
-  if (event.keyCode == 13) {
+function findKeyword(response){
+      var name = thisChatAnimal;
+      var text = response;
+      chatData.push({name: name, text: text});
+      $('#messageInput').val('');
+}
+
+function pushMessage(event)
+{
+  if (event.keyCode == 13)
+  {
     var name = $('#nameInput').val();
     var text = $('#messageInput').val();
     chatData.push({name: name, text: text});
     $('#messageInput').val('');
+    var text2 = text.trim();
+
+    if (text2.indexOf('trump') >= 0 )
+    {
+      findKeyword('Moo-ve to Canada');
+    }else if(text2.indexOf('unicorn') >= 0)
+    {
+      findKeyword('Those are not real');
+    }else if(text2.indexOf('hi') >= 0) //|| text2.indexOf('hey') >= 0)
+    {
+            // ||(text2.indexOf('hello') >= 0)
+            // ||(text2.indexOf('greetings') >= 0)
+            // ||(text2.indexOf('salutation') >= 0)
+            // ||(text2.indexOf('address') >= 0)
+            // ||(text2.indexOf('yo') >= 0)
+            
+    
+      findKeyword('Moo there!! cow greets you');
+    }else{
+      findKeyword('yo');
+    }
   }
-}
 
 $('#messageInput').keypress(pushMessage);
-
 chatData.on("child_added", showMessage);
-
+}
 function showMessage(msg) {
   var message = msg.val();
   var messageSender = message.name;
@@ -37,3 +66,4 @@ function showMessage(msg) {
   messageEl.append(contentEl);
   $('#messages').append(messageEl);
 }
+
